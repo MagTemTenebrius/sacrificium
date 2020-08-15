@@ -18,17 +18,20 @@ import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import ru.sacrificium.util.Constants;
+import ru.sacrificium.util.ObjectRegistration;
 
 import java.util.Properties;
 import java.util.stream.Collectors;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod("sacrificium")
+@Mod(Constants.MODID)
 public class Sacrificium {
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
 
     public Sacrificium() {
+        ObjectRegistration.register();
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         // Register the enqueueIMC method for modloading

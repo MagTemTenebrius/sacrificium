@@ -56,10 +56,10 @@ public class Sacrificium {
         LOGGER.info("HELLO FROM PREINIT");
         LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
 
-        DeferredWorkQueue.runLater(() -> {
+//        DeferredWorkQueue.runLater(() -> {
             //func_233813_a_ -> create
-            GlobalEntityTypeAttributes.put(SacrificiumEntities.SHIELD_ENTITY.get(), ShieldEntity.setCustomAttributes().func_233813_a_());
-        });
+//            GlobalEntityTypeAttributes.put(SacrificiumEntities.SHIELD_ENTITY.get(), ShieldEntity.setCustomAttributes().func_233813_a_());
+//        });
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {

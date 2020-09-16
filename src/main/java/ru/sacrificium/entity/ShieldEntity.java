@@ -32,6 +32,8 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.util.LazyOptional;
+import ru.sacrificium.Sacrificium;
+import ru.sacrificium.util.SacrificiumEntities;
 
 public class ShieldEntity extends ProjectileItemEntity {
 
@@ -40,7 +42,8 @@ public class ShieldEntity extends ProjectileItemEntity {
     }
 
     public ShieldEntity(World worldIn, LivingEntity throwerIn) {
-        super(EntityType.SNOWBALL, throwerIn, worldIn);
+        super(/*SacrificiumEntities.SHIELD_ENTITY.get()*/EntityType.SNOWBALL, throwerIn, worldIn);
+        this.setNoGravity(true);
     }
 
     @Override

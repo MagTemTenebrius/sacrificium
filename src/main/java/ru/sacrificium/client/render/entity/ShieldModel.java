@@ -1,12 +1,11 @@
-package ru.sacrificium.entity;
+package ru.sacrificium.client.render.entity;
 
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
 import net.minecraft.client.renderer.entity.model.EntityModel;
-import net.minecraft.client.renderer.entity.model.QuadrupedModel;
 import net.minecraft.client.renderer.model.ModelRenderer;
-import net.minecraft.entity.Entity;
 import net.minecraft.util.math.MathHelper;
+import ru.sacrificium.common.entity.ShieldEntity;
 
 public class ShieldModel<T extends ShieldEntity> extends EntityModel<T> {
     private final ModelRenderer head;

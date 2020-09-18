@@ -1,4 +1,4 @@
-package ru.sacrificium.entity;
+package ru.sacrificium.common.entity;
 
 import net.minecraft.block.DispenserBlock;
 import net.minecraft.dispenser.DefaultDispenseItemBehavior;

@@ -1,13 +1,12 @@
-package ru.sacrificium.object;
+package ru.sacrificium.common.item;
 
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemUseContext;
 import net.minecraft.stats.Stats;
 import net.minecraft.util.*;
 import net.minecraft.world.World;
-import ru.sacrificium.entity.ShieldEntity;
+import ru.sacrificium.common.entity.ShieldEntity;
 
 public class ShieldUse extends Item {
     public ShieldUse(Properties properties) {

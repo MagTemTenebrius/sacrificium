@@ -1,4 +1,4 @@
-package ru.sacrificium.util;
+package ru.sacrificium.core;
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
